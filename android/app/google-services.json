@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "683653647616",
+    "project_id": "abler-familynum",
+    "storage_bucket": "abler-familynum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683653647616:android:4b737a8431772b110df7e5",
+        "android_client_info": {
+          "package_name": "com.example.abler_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAFL9TR-02cSxiGi5z390W0XljOny-ZGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
