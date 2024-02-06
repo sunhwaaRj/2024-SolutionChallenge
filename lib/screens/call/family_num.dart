@@ -77,7 +77,7 @@ class _familynumPageState extends State<familynumPage> {
                             child: ElevatedButton(
                               onPressed: () async {
                                 await FlutterPhoneDirectCaller.callNumber(
-                                    number);
+                                    number); // 이 때 바로 전화걸리는 게 아닌 세부 정보를 조회,,,
                               },
                               style: ElevatedButton.styleFrom(
                                   shape: RoundedRectangleBorder(
