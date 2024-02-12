@@ -12,7 +12,6 @@ class familynumPage extends StatefulWidget {
 }
 
 class _familynumPageState extends State<familynumPage> {
-  //
   final firestore = FirebaseFirestore.instance;
 
   @override
