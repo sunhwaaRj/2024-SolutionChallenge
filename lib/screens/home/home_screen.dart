@@ -1,4 +1,7 @@
 import 'package:abler_project/screens/home/menupage.dart';
+import 'package:abler_project/screens/map/googleMapPage.dart';
+import 'package:abler_project/screens/map/mappage.dart';
+import 'package:abler_project/screens/mypage/mypage.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -12,12 +15,9 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
     menuPage(),
-    Text(
-      '임시 지도 페이지',
-    ),
-    Text(
-      '임시 내 정보 페이지',
-    ),
+    //mapPage(),
+    googleMapPage(),
+    myPage(),
   ];
 
   void _onItemTapped(int index) {
