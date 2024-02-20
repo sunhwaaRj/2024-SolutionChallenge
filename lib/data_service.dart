@@ -5,6 +5,8 @@ final FirebaseFirestore firestore = FirebaseFirestore.instance;
 // 컬렉션 이름
 CollectionReference familynumCollection = firestore.collection('familynum');
 CollectionReference familytextCollection = firestore.collection('familytext');
+CollectionReference emergencynumCollection =
+    firestore.collection('emergencynum');
 
 // 리뷰컬렉션에 리뷰데이터 저장
 // 가족전화 추가
@@ -25,6 +27,14 @@ void add_familytext(String groupName, String groupNum, String textField) {
   }).then((value) => print('familytext added'));
 }
 
+// 긴급전화
+void add_emergencynum(String emergName, String emergeNum) {
+  emergencynumCollection.add({
+    'emergName': emergName,
+    'emergNum': emergeNum,
+  }).then((value) => print('emergencynum added'));
+}
+
 // familynum컬렉션의 데이터 조회
 // 후에 로그인 기능 추가하면 해당 id에 담고 있는 정보와 일치 데이터 조회
 Stream<QuerySnapshot> getFamilynum() {
@@ -34,4 +44,9 @@ Stream<QuerySnapshot> getFamilynum() {
 // familytext컬렉션의 데이터 조회
 Stream<QuerySnapshot> getFamilytext() {
   return familytextCollection.snapshots();
+}
+
+// emergencynum컬렉션의 데이터 조회
+Stream<QuerySnapshot> getEmergencynum() {
+  return emergencynumCollection.orderBy("emergName").snapshots();
 }

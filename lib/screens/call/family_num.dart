@@ -66,7 +66,9 @@ class _familynumPageState extends State<familynumPage> {
                     return Column(
                       children:
                           snapshot.data!.docs.map((DocumentSnapshot document) {
+                        // 변수 설정, 전화 위해
                         String number = document['number'];
+
                         //return Text("${document['name']}");
                         return Container(
                           margin: const EdgeInsets.symmetric(vertical: 5),
