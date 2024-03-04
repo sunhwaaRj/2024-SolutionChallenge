@@ -1,7 +1,8 @@
+/* */
 import 'dart:async';
 
-import 'package:abler_project/screens/map/dphelper.dart';
-import 'package:abler_project/screens/map/fetchpark.dart';
+import 'package:abler_project/screens/map/dbhelper.dart';
+import 'package:abler_project/screens/map/fetchshelter.dart';
 import 'package:abler_project/screens/map/park.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
@@ -34,7 +35,7 @@ class _googleMapPageState extends State<googleMapPage> {
             lat: element.lat,
             lng: element.lng,
           );
-          DBHelper().insertPark(tmpPark);
+          DBHelper().updatePark(tmpPark);
         }));
   }
 
@@ -60,8 +61,14 @@ class _googleMapPageState extends State<googleMapPage> {
   }
 
   // 앱 실행 시 초기 화면이 위치할 지점 세팅
+  /* 
   final CameraPosition position = const CameraPosition(
-    target: LatLng(37.530542, 126.965153),
+    target: LatLng(37.530542, 126.965153), // 용산
+    zoom: 15, // 숫자가 작을수록 넓은 면적 조회
+  );
+*/
+  final CameraPosition position = const CameraPosition(
+    target: LatLng(37.529741, 126.964048), // 동작초 부근
     zoom: 15, // 숫자가 작을수록 넓은 면적 조회
   );
 
@@ -125,15 +132,23 @@ class _googleMapPageState extends State<googleMapPage> {
             child: Column(
               children: <Widget>[
                 FloatingActionButton.extended(
-                  label: const Text('주차장위치'),
-                  icon: const Icon(Icons.local_parking),
-                  backgroundColor: Colors.deepPurpleAccent[400],
+                  label: const Text(
+                    ' 병원위치 ',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  icon: const Icon(
+                    Icons.maps_ugc_rounded,
+                    color: Colors.white,
+                  ),
+                  backgroundColor: const Color(0xff1c3462),
                   //_isMarkerShow 에 의해 마커표시를 할지 삭제를 할지 체크한다
                   onPressed: _isMarkerShow ? _remove_marker : _add_marker,
                 ),
                 const SizedBox(height: 10),
                 FloatingActionButton.extended(
-                  label: const Text('현재위치'),
+                  label: const Text(' 현재위치 '),
                   icon: const Icon(Icons.gps_fixed),
                   backgroundColor: Colors.green[400],
                   onPressed: () {
