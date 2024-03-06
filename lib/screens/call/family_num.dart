@@ -44,7 +44,7 @@ class _familynumPageState extends State<familynumPage> {
                           ),
                           backgroundColor: const Color(0xff1c3462)),
                       child: const Text(
-                        '+ 연락처추가',
+                        '+ add Address',
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 40,

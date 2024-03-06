@@ -48,7 +48,7 @@ class _familytextPageState extends State<familytextPage> {
                           ),
                           backgroundColor: const Color(0xff1c3462)),
                       child: const Text(
-                        '+ 그룹 추가',
+                        '+ ADD Group',
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 40,
@@ -71,7 +71,10 @@ class _familytextPageState extends State<familytextPage> {
                     width: MediaQuery.of(context).size.width * 0.4,
                     height: MediaQuery.of(context).size.width * 0.2,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () async {
+                        // await sendSMS(
+                        // message: '문구', recipients: ['01021950625']);
+                      },
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
@@ -85,7 +88,7 @@ class _familytextPageState extends State<familytextPage> {
                       ),
                     ),
                   ),
-                ), */
+                ),*/
                 StreamBuilder<QuerySnapshot>(
                   stream: getFamilytext(),
                   builder: (BuildContext context,

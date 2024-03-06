@@ -24,7 +24,7 @@ class _addGroupnumState extends State<addGroupnum> {
         children: [
           // const Text('그룹 추가 화면입니다'),
           const Text(
-            '그룹 추가하기',
+            'add Group',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 40,
@@ -46,7 +46,7 @@ class _addGroupnumState extends State<addGroupnum> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  '그룹 이름',
+                  'Group Name',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -59,14 +59,14 @@ class _addGroupnumState extends State<addGroupnum> {
                   controller: addGroupnameController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: '그룹 이름을 입력하세요',
+                    labelText: 'Input group name',
                   ),
                 ),
                 const SizedBox(
                   height: 15,
                 ),
                 const Text(
-                  '전화번호',
+                  'Phone number',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -79,14 +79,14 @@ class _addGroupnumState extends State<addGroupnum> {
                   controller: addGroupnumController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: '전화번호를 입력하세요',
+                    labelText: 'Input Phone number',
                   ),
                 ),
                 const SizedBox(
                   height: 15,
                 ),
                 const Text(
-                  '문자 내용',
+                  'Text message',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -102,7 +102,7 @@ class _addGroupnumState extends State<addGroupnum> {
                   keyboardType: TextInputType.multiline,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: '문자 내용을 입력하세요',
+                    labelText: 'Input text message',
                   ),
                 ),
                 const SizedBox(
@@ -143,7 +143,7 @@ class _addGroupnumState extends State<addGroupnum> {
                         ),
                         backgroundColor: const Color(0xff1c3462)),
                     child: const Text(
-                      '그룹 추가',
+                      'add group',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,

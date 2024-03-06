@@ -20,7 +20,7 @@ class _menuPageState extends State<menuPage> {
           Container(
             margin: const EdgeInsets.symmetric(vertical: 20),
             child: SizedBox(
-              width: MediaQuery.of(context).size.width * 0.8,
+              width: MediaQuery.of(context).size.width * 0.85,
               height: MediaQuery.of(context).size.height * 0.18,
               child: ElevatedButton(
                 onPressed: () {
@@ -36,7 +36,7 @@ class _menuPageState extends State<menuPage> {
                     ),
                     backgroundColor: const Color(0xff1c3462)),
                 child: const Text(
-                  '가족전화',
+                  'GUARDIAN',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 50,
@@ -48,7 +48,7 @@ class _menuPageState extends State<menuPage> {
           Container(
             margin: const EdgeInsets.symmetric(vertical: 20),
             child: SizedBox(
-              width: MediaQuery.of(context).size.width * 0.8,
+              width: MediaQuery.of(context).size.width * 0.85,
               height: MediaQuery.of(context).size.height * 0.18,
               child: ElevatedButton(
                 onPressed: () {
@@ -64,10 +64,10 @@ class _menuPageState extends State<menuPage> {
                     ),
                     backgroundColor: const Color(0xffC13737)),
                 child: const Text(
-                  '긴급전화',
+                  'EMERGENCY',
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 50,
+                      fontSize: 45,
                       fontWeight: FontWeight.w600),
                 ),
               ),
@@ -76,7 +76,7 @@ class _menuPageState extends State<menuPage> {
           Container(
             margin: const EdgeInsets.symmetric(vertical: 20),
             child: SizedBox(
-              width: MediaQuery.of(context).size.width * 0.8,
+              width: MediaQuery.of(context).size.width * 0.85,
               height: MediaQuery.of(context).size.height * 0.18,
               child: ElevatedButton(
                 onPressed: () {
@@ -92,7 +92,7 @@ class _menuPageState extends State<menuPage> {
                     ),
                     backgroundColor: const Color(0xff1c3462)),
                 child: const Text(
-                  '문자전송',
+                  'Message',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 50,

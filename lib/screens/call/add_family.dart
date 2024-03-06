@@ -21,7 +21,7 @@ class _addFamilynumState extends State<addFamilynum> {
       body: ListView(
         children: [
           const Text(
-            '연락처 추가하기',
+            'ADDRESS',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 40,
@@ -43,7 +43,7 @@ class _addFamilynumState extends State<addFamilynum> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  '이름',
+                  'NAME',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -56,14 +56,14 @@ class _addFamilynumState extends State<addFamilynum> {
                   controller: addNameController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: '이름을 입력하세요',
+                    labelText: 'Input name',
                   ),
                 ),
                 const SizedBox(
                   height: 15,
                 ),
                 const Text(
-                  '전화번호',
+                  'Phone Number',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -76,14 +76,14 @@ class _addFamilynumState extends State<addFamilynum> {
                   controller: addPhonenumController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: '01000000000( \'-\' 제외하고 작성 )',
+                    labelText: '01000000000( except \'-\'  )',
                   ),
                 ),
                 const SizedBox(
                   height: 15,
                 ),
                 const Text(
-                  '관계',
+                  'Relationship',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -96,7 +96,7 @@ class _addFamilynumState extends State<addFamilynum> {
                   controller: addRelationshipController,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: '관계를 입력하세요. (예) 자녀',
+                    labelText: 'Input relationship. (ex) son',
                   ),
                 ),
                 const SizedBox(
@@ -138,7 +138,7 @@ class _addFamilynumState extends State<addFamilynum> {
                         ),
                         backgroundColor: const Color(0xff1c3462)),
                     child: const Text(
-                      '+ 연락처추가',
+                      '+ add Address',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,

@@ -6,7 +6,7 @@ import 'dart:convert';
 Future<List<Park>> fetchPark() async {
   late List<Park> parkingList;
   String url =
-      "http://openapi.seoul.go.kr:8088/$apiKey/json/GetParkInfo/1/5/용산";
+      "http://openapi.seoul.go.kr:8088/$apiKey/json/GetParkInfo/1/5/노원";
 
   final response = await http.get(Uri.parse(url));
   final responseBody = response.body;

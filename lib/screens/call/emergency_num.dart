@@ -25,7 +25,7 @@ class _emergencyCallState extends State<emergencyCall> {
             child: Column(
               children: [
                 const Text(
-                  '기관 긴급 전화',
+                  'EMERGENCY Call',
                   style: TextStyle(
                     color: Colors.red,
                     fontSize: 40,

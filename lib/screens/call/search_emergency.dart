@@ -19,7 +19,7 @@ class _addEmergencynumState extends State<addEmergencynum> {
       appBar: AppBar(),
       body: ListView(children: [
         const Text(
-          '연락처 추가하기',
+          'add Emergency num',
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 40,
@@ -41,7 +41,7 @@ class _addEmergencynumState extends State<addEmergencynum> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                '기관명',
+                'Agency name',
                 style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
@@ -54,14 +54,14 @@ class _addEmergencynumState extends State<addEmergencynum> {
                 controller: addEmergnameController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: '기관명을 입력하세요',
+                  labelText: 'Input the Agency name',
                 ),
               ),
               const SizedBox(
                 height: 15,
               ),
               const Text(
-                '기관 전화번호',
+                'Agency Num',
                 style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
@@ -74,7 +74,7 @@ class _addEmergencynumState extends State<addEmergencynum> {
                 controller: addEmergnumController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: '0211112222( \'-\' 제외하고 작성 )',
+                  labelText: '0211112222( except \'-\' )',
                 ),
               ),
               const SizedBox(
@@ -116,7 +116,7 @@ class _addEmergencynumState extends State<addEmergencynum> {
                     backgroundColor: const Color(0xff1c3462),
                   ),
                   child: const Text(
-                    '+ 기관명추가',
+                    '+ ADD',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,

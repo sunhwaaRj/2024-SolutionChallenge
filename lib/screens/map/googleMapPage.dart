@@ -133,7 +133,7 @@ class _googleMapPageState extends State<googleMapPage> {
               children: <Widget>[
                 FloatingActionButton.extended(
                   label: const Text(
-                    ' 병원위치 ',
+                    ' Hospital ',
                     style: TextStyle(
                       color: Colors.white,
                     ),
@@ -148,7 +148,22 @@ class _googleMapPageState extends State<googleMapPage> {
                 ),
                 const SizedBox(height: 10),
                 FloatingActionButton.extended(
-                  label: const Text(' 현재위치 '),
+                  label: const Text(
+                    ' Shelter ',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  icon: const Icon(
+                    Icons.night_shelter_outlined,
+                    color: Colors.white,
+                  ),
+                  backgroundColor: const Color(0xff1c3462),
+                  onPressed: () {},
+                ),
+                const SizedBox(height: 10),
+                FloatingActionButton.extended(
+                  label: const Text(' Position'),
                   icon: const Icon(Icons.gps_fixed),
                   backgroundColor: Colors.green[400],
                   onPressed: () {
